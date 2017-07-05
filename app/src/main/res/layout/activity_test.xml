@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true" >
+
+        <include
+            android:id="@+id/test_toolbar"
+            layout="@layout/include_toolbar" />
+        <Button
+            android:id="@+id/jump_fruit_recycler_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳到水果列表" />
+        <Button
+            android:id="@+id/jump_student_recycler_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳到学生列表" />
+        <Button
+            android:id="@+id/jump_async_task_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳到异步线程" />
+
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.example.dozen.myrecyclerview.bean.Student" />
+        <variable
+            name="student"
+            type="Student" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/student_firstname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@{student.firstName}" />
+        <TextView
+            android:id="@+id/student_lastname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/student_firstname_tv"
+            android:layout_centerVertical="true"
+            android:text="@{student.lastName}" />
+        <TextView
+            android:id="@+id/student_age_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:text="@{String.valueOf(student.age)}" />
+
+
+    </RelativeLayout>
+
+</layout>
