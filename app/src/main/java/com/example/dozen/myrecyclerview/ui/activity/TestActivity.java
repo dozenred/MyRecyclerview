@@ -23,6 +23,7 @@ public class TestActivity extends BaseActivity {
         jumpToFruit();
         jumpToStudent();
         jumpToAsyncTask();
+        jumpToOrders();
     }
 
     private void jumpToFruit() {
@@ -50,6 +51,16 @@ public class TestActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), AsyncTaskActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void jumpToOrders() {
+        mBinding.jumpOrdersRecyclerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), OrdersActivity.class);
                 startActivity(intent);
             }
         });
